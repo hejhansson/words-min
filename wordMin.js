@@ -18,9 +18,8 @@ Calculated on that an adult reads 200 words per minute.
 })();
 
 
-function count(id) {
+function count(el) {
 
-        var el = id;
         var text = el.innerText || el.textContent;
 
         var ord = text.split(' ').length;
