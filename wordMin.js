@@ -4,7 +4,7 @@
 @author Alexander Hansson
 @version 0.1
 
-Just put the id "text" where you want to count the time it takes to read that piece of text.
+Just put the id "textToCount" where you want to count the time it takes to read that piece of text.
 Calculated on that an adult reads 200 words per minute.
 
         
@@ -12,7 +12,7 @@ Calculated on that an adult reads 200 words per minute.
 
 (function() {
 
-    var el = document.getElementById("text");
+    var el = document.getElementById("textToCount");
     count(el);
 
 })();
@@ -22,8 +22,9 @@ function count(el) {
 
         var text = el.innerText || el.textContent;
 
-        var ord = text.split(' ').length;
-        var wordMin = ((ord/200)*60);
+        var word = text.split(' ').length;
+        var wordMin = ((word/200)*60);
+
         var wordInt = parseInt(wordMin);
         var wordDec = wordInt.toFixed(0);
 
