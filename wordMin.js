@@ -29,9 +29,9 @@ function count(el) {
 
         var seconds = Math.floor(wordDec),
         hours = Math.floor(seconds / 3600);
-    	seconds -= hours*3600;
-    	var minutes = Math.floor(seconds / 60);
-    	seconds -= minutes*60;
+        seconds -= hours*3600;
+        var minutes = Math.floor(seconds / 60);
+        seconds -= minutes*60;
 
     	if (hours < 10) {
     		hours = "0"+hours;
